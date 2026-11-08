@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Gestor de Tareas</title>
+    <link rel="stylesheet" href="../gestor-tareas/css/styles.css">
+</head>
+<body>
+
+    <main class="container">
+        <header>
+            <h1>Mis tareas ✨</h1>
+            <p>Organiza tu día de una manera sencilla.</p>
+        </header>
+
+        <section class="task-box">
+            <form id="task-form">
+                <input
+                    type="text"
+                    id="task-input"
+                    placeholder="Escribe una nueva tarea..."
+                    autocomplete="off"
+                    required
+                >
+                <button type="submit">Agregar</button>
+            </form>
+
+            <div class="task-info">
+                <span id="pending-count">Pendientes: 0</span>
+                <span id="completed-count">Completadas: 0</span>
+            </div>
+
+            <ul id="task-list"></ul>
+        </section>
+
+        <footer>
+            <p>Hecho con 💜 para organizar tu día.</p>
+        </footer>
+    </main>
+
+    <script src="../gestor-tareas/js/app.js"></script>
+</body>
+</html>
