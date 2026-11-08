@@ -75,3 +75,10 @@ function renderTasks() {
     pendingCount.textContent = "Pendientes: " + pending;
     completedCount.textContent = "Completadas: " + completed;
 }
+
+const clearButton = document.getElementById("clear-tasks");
+
+clearButton.addEventListener("click", function() {
+    tasks = [];
+    renderTasks();
+});
